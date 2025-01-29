@@ -60,16 +60,16 @@ function ProductDetail() {
         <div className="col-md-8 offset-md-2">
           <div className="card">
             <div className="row g-0">
-              <div className="col-md-6">
+              {/* <div className="col-md-6">
                 <img
                   src={product.image}
                   alt={product.name}
                   className="img-fluid rounded-start"
                 />
-              </div>
+              </div> */}
               <div className="col-md-6">
                 <div className="card-body">
-                  <h5 className="card-title">{product.name}</h5>
+                  <h5 className="card-title">{product.title}</h5>
                   <p className="card-text">{product.description}</p>
                   <p className="h4 text-success">${product.price}</p>
                   <p>Category: <strong>{product.category}</strong></p>
