@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 function Cart() {
     const [cartItems, setCartItems] = useState([]);
@@ -51,9 +51,9 @@ function Cart() {
                         <div key={item.id} className="col-md-6">
                             <div className="card mb-3 shadow-sm">
                                 <div className="card-body">
-                                    <h3 className="card-title">{item.appDTO?.title || "Unknown Product"}</h3>
-                                    <p className="card-text">{item.appDTO?.description || "No description available"}</p>
-                                    <p className="fw-bold">Price: ${item.appDTO?.price || "0.00"}</p>
+                                    <h3 className="card-title">{item.appDTO?.title}</h3>
+                                    <p className="card-text">{item.appDTO?.description }</p>
+                                    <p className="fw-bold">Price: ${item.appDTO?.price }</p>
                                     <p>Total: ${(item.appDTO?.price) * (item.quantity || 1)}</p>
                                     <button 
                                         className="btn btn-danger btn-sm" 
